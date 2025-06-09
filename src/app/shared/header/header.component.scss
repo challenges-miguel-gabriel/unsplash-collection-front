@@ -1,0 +1,30 @@
+@import '../../../scss/variables';
+
+header {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid $secondary-light-gray-alpha;
+
+    display: flex;
+    justify-content: space-between;
+
+
+    .navigation {
+        ul {
+            display: flex;
+            gap: 2rem;
+            
+            font-weight: 500;
+            color: $primary-dark-gray;
+
+            a {
+                padding: .7rem 1rem;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: $secondary-light-gray;
+    border-radius: 5px;
+    color: black;
+}

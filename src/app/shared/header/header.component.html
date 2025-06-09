@@ -1,0 +1,24 @@
+<header>
+    <div class="logo">
+        <a routerLink="/">
+            <img src="/Logo.svg" alt="Unsplash logo">
+        </a>
+    </div>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <a routerLink="/" [class]="{
+                    active: activatedRoute === '/'
+                }">
+                    <li>Home</li>
+                </a>
+                <a routerLink="collections" [class]="{
+                    active: activatedRoute === '/collections'
+                }">
+                    <li>Collections</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</header>
