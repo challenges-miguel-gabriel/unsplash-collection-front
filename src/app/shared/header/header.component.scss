@@ -15,6 +15,16 @@ header {
             
             font-weight: 500;
             color: $primary-dark-gray;
+
+            a {
+                padding: .7rem 1rem;
+            }
         }
     }
+}
+
+.active {
+    background-color: $secondary-light-gray;
+    border-radius: 5px;
+    color: black;
 }

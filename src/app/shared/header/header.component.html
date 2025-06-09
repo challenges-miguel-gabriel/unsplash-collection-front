@@ -1,6 +1,6 @@
 <header>
     <div class="logo">
-        <a href="/">
+        <a routerLink="/">
             <img src="/Logo.svg" alt="Unsplash logo">
         </a>
     </div>
@@ -8,10 +8,14 @@
     <div class="navigation">
         <nav>
             <ul>
-                <a href="/">
+                <a routerLink="/" [class]="{
+                    active: activatedRoute === '/'
+                }">
                     <li>Home</li>
                 </a>
-                <a href="collections">
+                <a routerLink="collections" [class]="{
+                    active: activatedRoute === '/collections'
+                }">
                     <li>Collections</li>
                 </a>
             </ul>
