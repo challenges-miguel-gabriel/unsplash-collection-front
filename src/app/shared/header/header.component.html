@@ -8,16 +8,16 @@
     <div class="navigation">
         <nav>
             <ul>
-                <a routerLink="/" [class]="{
-                    active: activatedRoute === '/'
-                }">
-                    <li>Home</li>
-                </a>
-                <a routerLink="collections" [class]="{
-                    active: activatedRoute === '/collections'
-                }">
-                    <li>Collections</li>
-                </a>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                    <a routerLink="/">
+                        Home
+                    </a>
+                </li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                    <a routerLink="/collections">
+                        Collections
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>

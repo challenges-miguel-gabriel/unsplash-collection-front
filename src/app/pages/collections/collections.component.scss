@@ -1,0 +1,25 @@
+@import '../../../scss/variables';
+
+.title {
+    text-align: center;
+
+    h2 {
+        background:  linear-gradient(90deg,rgba(240, 194, 147, 1) 43%, rgba(240, 194, 147, 1) 8%, rgba(142, 56, 131, 1) 54%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        background-clip: text;
+        color: transparent;
+
+        font-size: $title;
+        font-weight: 500;
+
+        margin: 2rem auto .5rem;
+    } 
+
+    a {
+        text-decoration: underline;
+        font-size: $large;
+    }
+}
